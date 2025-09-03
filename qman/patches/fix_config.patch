@@ -1,0 +1,21 @@
+--- a/config/qman.conf	2025-08-14 22:47:20.339612748 +0200
++++ b/config/qman.conf	2025-08-14 17:22:05.168321952 +0200
+@@ -12,7 +12,6 @@
+ enable=             true
+ 
+ [misc]
+-
+ ; If using a graphical web browser, uncomment this to suppress an annoying
+ ; flicker after opening an HTTP link
+ ; reset_after_http=   false
+@@ -21,6 +20,10 @@
+ ; flicker after opening an email link
+ ; reset_after_email=  false
+ 
++; Void uses mandoc instead of mandb
++; https://github.com/plp13/qman/blob/main/doc/OS_SPECIFIC.md#void-linux
++system_type=mandoc
++
+ [layout]
+ 
+ ; Change this to suit your terminal window size
