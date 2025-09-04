@@ -4,7 +4,6 @@ version=3.5.1
 revision=1
 build_style=python3-pep517
 hostmakedepends="python3-setuptools"
-makedepends=""
 depends="python3"
 short_desc="Content generation tool"
 maintainer="denn-moe <mail@denn.moe>"
@@ -13,3 +12,7 @@ homepage="https://github.com/nedbat/cog"
 changelog="https://raw.githubusercontent.com/nedbat/cog/main/CHANGELOG.rst"
 distfiles="https://github.com/nedbat/cog/archive/refs/tags/v${version}.tar.gz"
 checksum=3bc26442748fda315593086880233dbf7e8c28785fa976e6ae7f93c48405d7e4
+
+post_install() {
+	vlicense LICENSE
+}
