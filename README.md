@@ -17,11 +17,13 @@ cd void-packages
 # prepare build environment
 ./xbps-src binary-bootstrap
 
-# compile qman
+# compile
 ./xbps-src pkg qman
 
-# install qman
+# install
 sudo xi -f qman
+
+
 
 # cross compile
 ./xbps-src -a i686 pkg qman
