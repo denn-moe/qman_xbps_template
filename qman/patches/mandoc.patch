@@ -1,0 +1,11 @@
+--- a/src/config_def.py	2025-09-05 17:00:57.224422707 +0200
++++ b/src/config_def.py	2025-09-05 17:02:57.796219293 +0200
+@@ -175,7 +175,7 @@
+     "misc": {
+         "program_name": (("string",), None, False, "Program executable basename (discovered automatically)"),
+         "program_version": (("wstring",), ("Qman 1.5.0",), False, "Formal program name and version"),
+-        "system_type": (("systype", ), ("mandb", ), True, "System type: mandb, mandoc, freebsd, darwin, ..."),
++        "system_type": (("systype", ), ("mandoc", ), True, "System type: mandb, mandoc, freebsd, darwin, ..."),
+         "config_path": (("string",), None, False, "Path to the configuration file"),
+         "man_path": (("string",), ("/usr/bin/man",), True, "Path to the man(1) command"),
+         "groff_path": (("string",), ("/usr/bin/groff",), True, "Path to the groff(1) command"),
